@@ -446,9 +446,12 @@
           window.ebbeWidget.params.isStepOne = parameters.stepOne === "on";
           window.ebbeWidget.params.isOnlineCheckIn = parameters.meldewesen === "on";
           window.ebbeWidget.params.paymentMethodProviderId = this.getStringParameter(parameters, 'pmpid') || undefined;
+
+          var btnDate = document.getElementById('ebbeArrivalDate')
   
-          console.log('window.ebbeWidget', window.ebbeWidget.params);
-          console.log('This is a test 2!');
+          // console.log('window.ebbeWidget', window.ebbeWidget.params);
+          console.log(btnDate);
+          console.log(btnDate.value);
         }
         FrontendFrame.prototype.getIframeUrlParameters = function () {
           var queryParams = [];
@@ -507,7 +510,7 @@
             }
           }
   
-          console.log('getDateParameter', isArrivalDate ? 'arrivalDate' : 'departureDate', date, parameters);
+          // console.log('getDateParameter', isArrivalDate ? 'arrivalDate' : 'departureDate', date, parameters);
           return date;
         }
         FrontendFrame.prototype.getStringParameter = function (parameters, parameterName, defaultValue) {
