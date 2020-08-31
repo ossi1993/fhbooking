@@ -448,7 +448,7 @@
           window.ebbeWidget.params.paymentMethodProviderId = this.getStringParameter(parameters, 'pmpid') || undefined;
   
           console.log('window.ebbeWidget', window.ebbeWidget.params);
-          console.log('This is a test!');
+          console.log('This is a test 2!');
         }
         FrontendFrame.prototype.getIframeUrlParameters = function () {
           var queryParams = [];
