@@ -447,19 +447,19 @@
           window.ebbeWidget.params.isOnlineCheckIn = parameters.meldewesen === "on";
           window.ebbeWidget.params.paymentMethodProviderId = this.getStringParameter(parameters, 'pmpid') || undefined;
 
-          function loadScheduleEvent() {
-            var input = document.getElementById('ebbeArrivalDate');
-            if (input !== null) {
-                console.log('Log Extern')
-                input.addEventListener('change', updateDate(input.value));
-            } else {
-                setTimeout(loadScheduleEvent, 200);
-            };
-          }
-          function updateDate(date) {
-              console.log('New Arrival Date: ' + date)
-          }
-          loadScheduleEvent()
+          // function loadScheduleEvent() {
+          //   var input = document.getElementById('ebbeArrivalDate');
+          //   if (input !== null) {
+          //       console.log('Log Extern')
+          //       input.addEventListener('change', updateDate(input.value));
+          //   } else {
+          //       setTimeout(loadScheduleEvent, 200);
+          //   };
+          // }
+          // function updateDate(date) {
+          //     console.log('New Arrival Date: ' + date)
+          // }
+          // loadScheduleEvent()
       
           console.log('window.ebbeWidget', window.ebbeWidget.params);
         }
